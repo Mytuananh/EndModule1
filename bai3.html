@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    function search(arr) {
+        let count = 0;
+        let array = ['a', 'o', 'i', 'u', 'e'];
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < array.length; j++) {
+                if (array[j] === arr[i]) {
+                    count++;
+                }
+            }
+        }
+        if (count === 0) {
+            return false;
+        } else {
+            return count
+        }
+    }
+    let arr = "toi di choi";
+   console.log(search(arr));
+
+
+</script>
+</body>
+</html>
